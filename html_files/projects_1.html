@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Scanner</title>
+    <link rel="stylesheet" href="../css_files/projects_1.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+<!------------NAVBAR SECTION------------>
+<div id="navbar-placeholder"></div>
+<div id="vanta-wrapper">
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        </script>
+    <!------------Intro Section------------>
+    <section id="intro">
+        <!--<img src="../images/b_4.jpg" alt="projects_1_bg_img" class="bg-image">--> 
+        <div class="container text-center">
+            <h1>TICKET SCANNER</h1>
+            <div class="text-primary">
+                <p>A barcode scanning web application that dynamically processes CSV files and updates scanned records 
+                    in an SQLite database, designed for event management with 300+ attendees.</p>
+            </div>
+            <div class="intro-btn text-center">
+                <a href="https://github.com/nickelburger/all-my-projects/tree/be1c0914bc86cc73601a163918a4f1d74ed5e0b1/ticket_scanner" class="btn btn-primary btn-projects">Projects Link</a>
+            </div>
+        </div>
+        
+    </section>
+</div>
+
+<!------------Project-info Section------------>
+
+<section id="project-description">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-md-8">
+                <img src="../images/icket.png" class="img-fluid" alt="ticket-img">
+            </div>
+        </div>
+        <div class="row justify-content-center text-left mt-5">
+            <div class="col-md-8">
+                <h2 class="mt-4">Project Overview</h2>
+                <p>This project is a robust web-based barcode scanning and event management system developed 
+                    using Flask, designed to streamline the process of tracking and managing attendees at events 
+                    with large crowds. The system is built to handle event registration and check-in processes by 
+                    enabling users to upload CSV files containing attendee information. Upon uploading the CSV, 
+                    the application dynamically processes the data and creates an SQLite database table with 
+                    attendee records, including unique identifiers such as names and a barcode-matching 
+                    "record_locator" field.</p>
+                <h3 >Key Features:</h3>
+                <ul>
+                    <li><strong>CSV Upload:</strong> Users can upload CSV files containing attendee information, which the system parses and stores in an SQLite database.</li>
+                    <li><strong>Dynamic Database Creation:</strong> The system processes the uploaded data and dynamically generates a database structure based on the CSV headers.</li>
+                    <li><strong>Real-time Barcode Scanning:</strong> Utilizing QuaggaJS, the system allows for seamless, real-time scanning of barcodes with live feedback.</li>
+                    <li><strong>Asynchronous Data Handling:</strong> AJAX requests are used to update the system in real-time, ensuring a responsive user experience.</li>
+                    <li><strong>Attendee Status Tracking:</strong> Each scanned record is updated in the database, and results are displayed to the user based on the status of the record: 'Found,' 'Not Found,' or 'Already Found.'</li>
+                    <li><strong>Recent Scans Monitoring:</strong> Displays the last five successfully scanned attendees for real-time event monitoring.</li>
+                    <li><strong>Responsive Interface:</strong> Built with Bootstrap, the application adapts to different screen sizes and device types, offering a smooth user experience.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center text-left mt-5">
+            <div class="col-md-8">
+                <h2>Tools Used</h2>
+                <div class="skill-wrapper d-flex">
+                    <span class="skill-badges">Flask</span>
+                    <span class="skill-badges">SQLite</span>
+                    <span class="skill-badges">Pandas</span>
+                  <span class="skill-badges">HTML</span>
+                  <span class="skill-badges">CSS</span>
+                  <span class="skill-badges ">JavaScript</span>
+                  <span class="skill-badges">jQuery</span>
+                  <span class="skill-badges">Boostrap 5</span>
+                  <span class="skill-badges ">Git</span>
+                  <span class="skill-badges ">GitHub</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--<div class="row justify-content-center text-left mt-5">
+            <div class="col-md-8">
+                <h2>See Live</h2>
+                <div class="col-md-6 .hstack">
+                    <a href="#" class="btn btn-primary btn-lg mb-2 ">Project Link</a>
+                    <a href=".." class="btn btn-outline-primary btn-lg mb-2">Go Back</a>
+                </div>
+            </div>
+        </div>-->
+        <div class="row justify-content-center text-left mt-5">
+            <div class="col-12 col-md-8">
+                <h2>See Live</h2>
+                <div class="d-grid gap-2 d-md-flex justify-content-start">
+                    <a href="https://github.com/nickelburger/all-my-projects/tree/be1c0914bc86cc73601a163918a4f1d74ed5e0b1/ticket_scanner" class="btn btn-primary btn-lg me-md-2">Project Link</a>
+                    <a href="..#projects" class="btn btn-outline-primary me-md-2">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!------------Footer Section------------>
+<div id="footer-placeholder"></div>
+
+<script>
+    fetch('/html_files/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+<script>
+        /*This is the background for intro section*/
+VANTA.NET({
+    el: "#vanta-wrapper", /* Apply the effect to the section with id 'intro' */
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x2a2a22,
+    backgroundColor: 0xf2f2f2,
+    showDots: false
+})
+</script>
+
+</body>
+</html>

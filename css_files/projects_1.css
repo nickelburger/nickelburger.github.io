@@ -1,0 +1,87 @@
+/********Project-info Section********/
+#project-description {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+#project-description h2{
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#project-description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+#project-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.bg-image{
+    position: relative;
+    z-index:-10;
+}
+
+#tools {
+    background-color: #f0f0f0;
+}
+
+#project-description .btn-primary {
+    background-color: #284677;
+    border: none;
+    font-size: 1rem; 
+}
+
+#project-description .btn-outline-primary{
+    color: #284677;
+    border-color: #284677;
+    font-size: 1rem; 
+}
+
+#project-description .btn-outline-primary:hover{
+    background-color: #3a6fc5;
+    color: #fefefe;
+    border-color: #3a6fc5;
+    font-size: 1rem; 
+}
+
+
+#project-description a:not(:last-child){
+    margin-right:20px;
+}
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+.skill-badges {
+    display: inline-block;
+    background-color: #cfcccc;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    min-width: 100px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+/*
+@media (max-width: 768px) {
+    .btns a {
+         /* Add spacing between buttons when stacked 
+    }
+}*/
+
+@media (max-width: 767px) {
+    .btn {
+        width: auto; /* Prevents buttons from expanding fully */
+    }
+}

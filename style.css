@@ -1,0 +1,275 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    font-family: sans-serif;
+}
+/******NAVBAR******/
+
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+
+.navbar-brand {
+    font-size:large;
+    font-weight: bold; /* Makes the text bold */
+}
+
+.navbar-nav a{
+    font-size:large;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+    padding: 18px;
+    margin-left: 25px;
+}
+
+.navbar-toggler i
+{
+    color: black;
+    
+}
+.navbar-toggler
+{
+    outline: none !important;
+
+}
+
+/****** Intro Section ******/
+#vanta-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+
+#intro {
+    
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text horizontally */
+    position: relative;
+    z-index: 1;
+}
+#intro .container {
+    flex-grow: 1; /* Pushes the icon down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#intro h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.text-primary {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    line-height: 1.8;
+}
+
+.text-primary p {
+    font-size: 1.32rem;
+    font-weight: 400;
+    color: #333;
+    margin: 1em 0; /* Simplified margin */ 
+    text-align: center;  
+}
+
+#intro i {
+    position: absolute;
+    margin-bottom: 10px auto;
+    bottom: 40px; /* Adjust the spacing from the bottom */
+    font-size: 2rem; /* Adjust the size of the icon */
+    color: #333; /* Change the color if needed */
+}
+.intro-btn {
+    padding-top: 20px;
+}
+.intro-btn .btn-primary{
+    background-color: #284677 !important; 
+    border: none;
+    padding: 15px 70px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;  /* White text color */  /* 
+    border-radius: 8px;  /* Rounded corners */  
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Add shadow effect */
+    transition: transform 0.3s ease;  /* Smooth hover transition */
+    text-transform: uppercase;
+}
+
+
+.btn-projects:hover {
+    transform: translateY(-3px);  /* Lift the button on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);  /* Stronger shadow on hover */
+}
+
+/****** About Section ******/
+
+#about-me{
+    background-color: #faf6f6;
+    padding: 80px 0;
+}
+.title
+{
+    font-weight: 600;
+    color: #111;
+}
+.title-text
+{
+    font-size: large;
+    font-weight: 500;
+    color: #555;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.about-me h3{
+    color: #111;
+    font-weight: 600;
+    padding: 20px;
+    text-align: left;
+    margin-left: 0;
+}
+.about-me p{
+    color: #555;
+    text-align: left;
+    max-width: 90%; /* Adjust percentage or use a fixed value like 800px */
+    padding-left: 20px;
+}
+
+.title::after
+{
+    content: '';
+    background: #111;
+    height: 5px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px)
+}
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 20px; 
+}
+
+.skill-badge {
+    display: inline-block;
+    background-color: #cfcccc;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 100px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+#about-me .btn-primary {
+    background-color: #284677;
+    border: none;
+    font-size: 1rem; 
+}
+
+/****** Project Section ******/
+
+#projects {
+    padding: 100px 0;
+    background-color: #fcfdfd;
+    margin: 40px 0;
+}
+
+
+.project-card {
+    margin-bottom: 50px;
+}
+.card-img-top{
+    border-bottom: 2px solid #d3d1d1;
+}
+#projects .btn-outline-primary {
+    color: #284677;
+    border-color: #284677;
+    font-size: 1rem; 
+}
+
+#projects .btn-outline-primary:hover {
+    background-color: #284677;
+    color: #fefefe;
+    border-color: #284677;
+    font-size: 1rem; 
+}
+/* Fix text color and chanage button color*/
+
+
+/****** Footer Section ******/
+
+#footer {
+    align-items: center;
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    padding: 40px 0; /* Spacing around the section */
+}
+.footer-box p {
+    font-size: smaller;
+    line-height: 2;
+    color: #fff;
+    max-width: 450px;
+}
+#footer .row{
+    padding: 3.5rem 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #f39c12; /* Color change on hover */
+}
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+    font-size: small;
+}
+
+.copyright a{
+    color: #fff;
+}
+.copyright a:hover {
+    color: #f39c12; /* Color change on hover */
+}
